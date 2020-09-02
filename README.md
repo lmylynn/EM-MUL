@@ -1,6 +1,6 @@
 EM-MUL
 ====
-EM-MUL is an effective tools which resolves ambiguous bisulfite-treated reads, making use of information we have.
+   EM-MUL is an effective tools which resolves ambiguous bisulfite-treated reads, making use of information we have.
 To run this program, we needs to have samtools, perl, bedtools,and g++ first.  <br>
 The  inputs of this tool consists four parts. <br>
 * -r is the reference genome to be aligned.<br>
