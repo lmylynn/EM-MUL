@@ -11,9 +11,9 @@ EM-MUL
 >Among them, the unique reads and the multireads are obtained by aligning the original BS reads to bismark. 
 >Overlappedfile can be obtained through the unique reads and multireads, the processing flow refers to BAM_ABS, the commad is: <br>
 >>1. Convert unique_reads.sam to unique_reads.bam.<br>
->>>samtools view -bS unique_reads.sam > unique_reads.bam <br> 
+>>>>samtools view -bS unique_reads.sam > unique_reads.bam <br> 
 >>2. Run Covert_to_bed_unite.pl to covert ambiguous read file to bed formate with --ambiguous option.<br>
->>>perl Convert_to_bed_unite.pl --ambiguous ambiguous_file.sam <br>
+>>>>perl Convert_to_bed_unite.pl --ambiguous ambiguous_file.sam <br>
 >>3. Run samtools to get overlapped unique reads in sam format. <br>
     samtools view -L ambiguous_file.bed unique_reads.bam -q 20 > unique_reads.sam <br>
 >>4. To get rid of duplicates from the unique reads.<br>
