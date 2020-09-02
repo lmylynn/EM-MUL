@@ -1,12 +1,12 @@
 EM-MUL
 ====
-    EM-MUL is an effective tools which resolves ambiguous bisulfite-treated reads, making use of information we have.  <br>
-To run this program, we needs to have samtools, perl, bedtools,and g++ first.  <br>
-The  inputs of this tool consists four parts. <br>
--r is the reference genome to be aligned.<br>
--u is the unique reads.<br>
--m is multireads,which align to multiple locations of the reference genome ambiguously.<br>
--o is the unique reads that overlapped with multireads.<br>
+    EM-MUL is an effective tools which resolves ambiguous bisulfite-treated reads, making use of information we have.
+#To run this program, we needs to have samtools, perl, bedtools,and g++ first.  <br>
+#The  inputs of this tool consists four parts. <br>
+    -r is the reference genome to be aligned.<br>
+    -u is the unique reads.<br>
+    -m is multireads,which align to multiple locations of the reference genome ambiguously.<br>
+    -o is the unique reads that overlapped with multireads.<br>
 Among them, the unique reads and the multireads are obtained by aligning the original BS reads to bismark. <br>
 Overlappedfile can be obtained through the unique reads and multireads, the processing flow refers to BAM_ABS, the commad is: <br>
     1. Convert unique_reads.sam to unique_reads.bam.<br>
