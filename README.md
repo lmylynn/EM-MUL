@@ -29,4 +29,4 @@ Overlappedfile can be obtained through the unique reads and multireads, the proc
     * ./intersectBed -a ambiguous_file.bed -b unique_reads_nodup.bed -wb -wa > overlapfile.txt <br>
     
 * Score the multireads using EM-MUL.<br>
-    * python3 new_score_all_and_coverage_human -r hg38 -u unique_reads.sam -m multireads.sam -r overlapfile.sam<br>
+    * python3 new_score_all_and_coverage_human -r hg38 -u unique_reads.sam -m multireads.sam -r overlapfile.txt<br>
